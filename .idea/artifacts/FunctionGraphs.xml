@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FunctionGraphs">
+    <output-path>$PROJECT_DIR$/out/artifacts/FunctionGraphs</output-path>
+    <root id="archive" name="FunctionGraphs.jar">
+      <element id="archive" name="FunctionGraphs.jar">
+        <element id="module-output" name="FunctionGraphs" />
+      </element>
+      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:18-ea+6" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import ivanbelyj.functiongraphs.ResizableCanvas?>
+<HBox maxHeight="627.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="627.0" prefWidth="941.0" style="-fx-background-color: #444;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ivanbelyj.functiongraphs.Controller">
+    <children>
+        <ResizableCanvas fx:id="canvas" height="648.0" width="697.0" HBox.hgrow="ALWAYS" />
+      <VBox alignment="TOP_CENTER" prefHeight="627.0" prefWidth="250.0" HBox.hgrow="NEVER">
+         <children>
+            <Label text="y = A*x^3 + B*x^2 + C*x + D" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="A" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="4.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="aParam" onAction="#aParamChanged">
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="B" textFill="WHITE" />
+            <TextField fx:id="bParam" onAction="#bParamChanged">
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="C" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="4.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="cParam" layoutX="26.0" layoutY="105.0" onAction="#cParamChanged">
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="128.0" layoutY="146.0" text="D" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="4.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="dParam" layoutX="26.0" layoutY="167.0" onAction="#dParamChanged">
+               <VBox.margin>
+                  <Insets bottom="16.0" />
+               </VBox.margin>
+            </TextField>
+            <Label prefWidth="212.0" text="Для перерисовки графика после ввода значения нажмите Enter" textFill="WHITE" wrapText="true">
+               <VBox.margin>
+                  <Insets top="16.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets left="300.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+         </padding>
+      </VBox>
+    </children>
+</HBox>
